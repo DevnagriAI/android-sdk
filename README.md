@@ -111,6 +111,12 @@ You can use these methods anywhere in your project and these will provide transl
        // use translated map here
     }
  
+ # Get Translations Of JSON Object 
+
+    DevNagriTranslationSdk.getTranslationOfJSON(jsonObject){ translations ->
+       // use translated json object here
+    }
+ 
  
 # Usage
 
