@@ -111,12 +111,23 @@ You can use these methods anywhere in your project and these will provide transl
        // use translated map here
     }
  
- # Get Translations Of JSON Object 
 
-    DevNagriTranslationSdk.getTranslationOfJSON(jsonObject){ translations ->
-       // use translated json object here
+# Get Translations Of JSON Object
+# This method is used to convert the entire JSON object to requested language
+# ignoreKeys -> Send a list of strings that you want to ignore during the conversion process
+
+    val jsonObject = JSONObject()
+    jsonObject.put("sample_key", "Sample Text")
+    jsonObject.put("sample_key_one", "Sample Text1")
+
+    val ignoreKeys: ArrayList<String> = ArrayList()
+    ignoreKeys.add("_id")
+    ignoreKeys.add("unit_id")
+
+    DevNagriTranslationSdk.getTranslationOfJSON(jsonObject, ignoreKeys) {
+	//use translated JSON Object here
     }
- 
+
  
 # Usage
 
