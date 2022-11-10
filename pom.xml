@@ -8,7 +8,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.github.DevnagriAI</groupId>
   <artifactId>android-sdk</artifactId>
-  <version>1.0.5</version>
+  <version>1.0.7</version>
  <!-- <packaging>aar</packaging>-->
   <dependencies>
      <dependency>
@@ -38,6 +38,7 @@
     <dependency>
       <groupId>org.jetbrains.kotlinx</groupId>
       <artifactId>kotlinx-coroutines-android</artifactId>
+	<version>1.4.2</version>
       <scope>runtime</scope>
     </dependency>
     <dependency>

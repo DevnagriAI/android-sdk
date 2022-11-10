@@ -114,8 +114,9 @@ You can use these methods anywhere in your project and these will provide transl
  
 
 # Get Translations Of JSON Object
-# This method is used to convert the entire JSON object to requested language
-# ignoreKeys -> Send a list of strings that you want to ignore during the conversion process
+
+   // This method is used to convert the entire JSON object to requested language
+   // ignoreKeys -> Send a list of strings that you want to ignore during the conversion process
 
     val jsonObject = JSONObject()
     jsonObject.put("sample_key", "Sample Text")
