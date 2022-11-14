@@ -130,7 +130,15 @@ You can use these methods anywhere in your project and these will provide transl
 	//use translated JSON Object here
     }
 
- 
+# For Modular Approach
+   - Please add DevNagriSDK dependency in each module level gradle file.
+   - If you have multiple modules in your application, 
+   then in each module's base activity override the below method.
+
+   override fun getDelegate(): AppCompatDelegate {
+           return DevNagriTranslationSdk.fetchAppDelegate(this, super.getDelegate())
+        }
+
 # Usage
 
 Translations can be used as usual in layouts:
