@@ -43,11 +43,11 @@ Initialise the SDK in your application class and add the API_KEY from DevNagri.
             
           val syncTime:Int = 60  //In minutes
           
-          val strings = R.string::class.java.fields.map { it.name }
-          val arrays = R.array::class.java.fields.map { it.name }
-          val plurals = R.plurals::class.java.fields.map { it.name }
+          val strings = R.string::class.java.fields
+          val arrays = R.array::class.java.fields
+          val plurals = R.plurals::class.java.fields
 	  
-	  // passing arrays and plurals in init method is optional here, pass them only if defined in strings.xml file
+	  // passing fields and plurals in init method is optional here, pass them only if defined in strings.xml file
           DevNagriTranslationSdk.init(applicationContext, "API_KEY" ,syncTime, strings, arrays, plurals, initListener = {isInitialized, error ->
 			
           })
