@@ -2,6 +2,7 @@ package com.translationsdk
 
 import android.app.AlertDialog
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -50,13 +51,19 @@ private var _binding: FragmentFirstBinding? = null
             val listOfKeys=supportableLanguages.keys.toTypedArray()
 
 
-            var locale= Locale(supportableLanguages[listOfKeys[userSelectedIndex]])
+            var locale = Locale("en")
+            if (!supportableLanguages.isNullOrEmpty()) {
+                locale= Locale(supportableLanguages[listOfKeys[userSelectedIndex]])
+            }
 
             AlertDialog.Builder(requireContext())
                 .setTitle(getString(R.string.change_app_language))
                 .setPositiveButton(getString(R.string.change)) { dialog, _ ->
                     dialog.dismiss()
-                    DevNagriTranslationSdk.updateAppLocale(activity as MainActivity,locale)
+                    Log.d("DevNagriSDK_TAG", "Start update App Locale")
+                    DevNagriTranslationSdk.updateAppLocale(activity as MainActivity,locale, completionHandler = {isCompleted, error ->
+                        Log.d("DevNagriSDK_TAG", "Complete update App Locale")
+                    })
                 }
                 .setSingleChoiceItems(
                     listOfKeys,
