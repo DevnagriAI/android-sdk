@@ -22,7 +22,7 @@ Add the below dependency in your app build.gradle file:
 	
 	    ...
 	    
-	    implementation ('com.github.DevnagriAI:android-sdk:1.1.0@aar') { transitive(true) }
+	    implementation ('com.github.DevnagriAI:android-sdk:1.1.3@aar') { transitive(true) }
 	    
 	}
         
@@ -41,11 +41,11 @@ Initialise the SDK in your application class and add the API_KEY from DevNagri.
       override fun onCreate() {
           super.onCreate()
             
-          val syncTime:Int = 10  //In minutes
+          val syncTime:Int = 60  //In minutes
           
-          val strings = R.string::class.java.fields.map { it.name }
-          val arrays = R.array::class.java.fields.map { it.name }
-          val plurals = R.plurals::class.java.fields.map { it.name }
+          val strings = R.string::class.java.fields
+          val arrays = R.array::class.java.fields
+          val plurals = R.plurals::class.java.fields
 	  
 	  // passing arrays and plurals in init method is optional here, pass them only if defined in strings.xml file
           DevNagriTranslationSdk.init(applicationContext, "API_KEY" ,syncTime, strings, arrays, plurals, initListener = {isInitialized, error ->
@@ -71,10 +71,13 @@ Additionally, you need to inject the SDK in each activity, e.g. by creating a ba
 # Change Language
 
 In case you don't want to use the system language, you can set a different language in the updateAppLocale method. The language code (locale) needs to be present in a release from Devnagri.
+updateAppLocale function may take some time (for example: 3-4 seconds), we suggest you to add a loader before calling updateAppLocale and stop in callback.
 
-
-    val locale = Locale("hi");
-    DevNagriTranslationSDK.updateAppLocale(activityContext , locale);
+	//Start loader here
+	val locale = Locale("hi");
+	DevNagriTranslationSdk.updateAppLocale(this,locale, completionHandler = {isCompleted, error ->  
+		//Stop loader here
+	})
 
 Please note that you will get the english text back if your device language is english or you have not set any specific language for the SDK. To get the translation in Hindi, Please update app locale to Hindi as per above method.
 
@@ -135,9 +138,9 @@ You can use these methods anywhere in your project and these will provide transl
    - If you have multiple modules in your application, 
    then in each module's base activity override the below method.
 
-   override fun getDelegate(): AppCompatDelegate {
-           return DevNagriTranslationSdk.fetchAppDelegate(this, super.getDelegate())
-        }
+	override fun getDelegate(): AppCompatDelegate {
+		return DevNagriTranslationSdk.fetchAppDelegate(this, super.getDelegate())
+	}
 
 # Usage
 
