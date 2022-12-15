@@ -15,6 +15,10 @@
     <string name="change">Change Now</string>
     <string name="best_crickets"><u>Go to next screen to check best cricketers in world</u></string>
 
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="testing_toggle">Testing Toggle</string>
+    <string name="are_you_fine">Are you fine</string>
 
     <string-array name="best_cricket_eleven">
         <item>Babar Azam</item>
