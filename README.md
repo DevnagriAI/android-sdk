@@ -4,6 +4,8 @@ Devnagri Over the Air for Android lets you update translations in your Android a
 
 By including our SDK, your app will check for updated translations in Devnagri regularly and download them in the background.
 
+**Do note**: The language selection screen needs to be designed by the client. We only empower localisation of the app.
+
 # Include the SDK
 As a first step a new maven repository needs to be added to your default dependency resolution file set by your project, it can be either your project build.gradle file or settings.gradle file:
 
