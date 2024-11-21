@@ -154,3 +154,30 @@ And inside code:
     val text = findViewById(R.id.text_id) as TextView
     text.setText(R.string.translation_key)
 
+
+# Screenshot Feature in SDK
+
+Our SDK provides a robust screenshot capturing functionality with two modes of operation: Manual Screenshot and Automatic Screenshot. These features can be enabled or disabled using the info API.
+
+- **Features Overview**
+	1. Manual Screenshot
+	When the enableManualScreenshot key is set to true via the info API:
+		1. A Screenshot Button appears on the screen.
+		2. Users can click this button to manually capture screenshots of the current screen.
+
+	2. Automatic Screenshot
+	When the enableAutomaticScreenshot key is set to true via the info API:
+		1. Screenshots are captured automatically in the background.
+		2. The SDK captures a screenshot whenever the user navigates to a new screen.
+		3. This ensures a seamless tracking of all user interactions with different screens.
+
+- **Configuration Options**
+	The screenshot features can be toggled using the following keys in the info API:
+
+	1. enableManualScreenshot:Boolean -> Enables or disables the Manual Screenshot feature.
+	2. enableAutomaticScreenshot:Boolean -> Enables or disables the Automatic Screenshot feature.
+
+
+
+
+
