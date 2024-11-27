@@ -2,7 +2,7 @@ package com.translationsdk
 
 import android.app.Application
 import android.util.Log
-import com.devnagritranslationsdk.DevNagriTranslationSdk
+import com.devnagritranslationsdk.DevNagriTranslationSDK
 
 
 class BaseApplication : Application() {
@@ -13,7 +13,7 @@ class BaseApplication : Application() {
         val arrays=R.array::class.java.fields
         val API_KEY="<Enter Your API Key Here>"
         Log.d("DevNagriSDK_TAG", "Start init process")
-        DevNagriTranslationSdk.init(applicationContext,API_KEY,10,strings,arrays, null, initListener = {isInitialized, error ->
+        DevNagriTranslationSDK.init(applicationContext,API_KEY,10,strings,arrays, null, initListener = {isInitialized, error ->
             Log.d("DevNagriSDK_TAG", "Complete init process")
         } )
     }
