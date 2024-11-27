@@ -30,7 +30,7 @@ Add the below dependency in your app build.gradle file:
 
  
 # Compatibility
- Use Kotlin version 1.4.30 or above and Gradle JDK version 11. This SDK support only kotlin language. Target/Compile SDK should be 31.
+ Use Kotlin version 1.4.30 or above and Gradle JDK version 17. This SDK support only kotlin language. Target/Compile SDK should be 35.
  
 # Configuration
 
@@ -41,7 +41,7 @@ Initialise the SDK in your application class and add the API_KEY from DevNagri.
       override fun onCreate() {
           super.onCreate()
             
-          val syncTime:Int = 60  //In minutes
+          val syncTime:Int = 60  //In minutes, minimum 10 minute allowed
           
           val strings = R.string::class.java.fields
           val arrays = R.array::class.java.fields
