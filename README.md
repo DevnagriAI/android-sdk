@@ -22,7 +22,7 @@ Add the below dependency in your app build.gradle file:
 	
 	    ...
 	    
-	    implementation ('com.github.DevnagriAI:android-sdk:2.0.0@aar') { transitive(true) }
+	    implementation ('com.github.DevnagriAI:android-sdk:2.0.1@aar') { transitive(true) }
 	    
 	}
         
@@ -30,7 +30,7 @@ Add the below dependency in your app build.gradle file:
 
  
 # Compatibility
- Use Kotlin version 1.4.30 or above and Gradle JDK version 17. This SDK support only kotlin language. Target/Compile SDK should be 35.
+ Use Kotlin version 1.4.30 or above and Gradle JDK version VERSION_1_8. This SDK support only kotlin language. Target/Compile SDK should be 34.
  
 # Configuration
 
