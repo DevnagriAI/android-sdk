@@ -34,7 +34,7 @@ Add the below dependency in your app build.gradle file:
  
 # Configuration
 
-Initialise the SDK in your application class and add the API_KEY from DevNagri. 
+Initialise the SDK in your application class and add the API_KEY from Devnagri. 
 
     class MainApplication : Application() {
     
@@ -134,7 +134,7 @@ You can use these methods anywhere in your project and these will provide transl
     }
 
 # For Modular Approach
-   - Please add DevNagriSDK dependency in each module level gradle file.
+   - Please add DevnagriSDK dependency in each module level gradle file.
    - If you have multiple modules in your application, 
    then in each module's base activity override the below method.
 
