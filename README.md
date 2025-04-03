@@ -30,7 +30,7 @@ Add the below dependency in your app build.gradle file:
 
  
 # Compatibility
- Use Kotlin version 1.4.30 or above and Gradle JDK version 17. This SDK support only kotlin language. Target/Compile SDK should be 34.
+Use Kotlin version 1.8.0 (minimum 1.6.0) or later and Gradle JDK version 17 (Gradle tools version 7.4.2). This SDK supports only Kotlin. The target/compile SDK version should be 34, and the SDK is compatible with Android 10 and above.
  
 # Configuration
 
