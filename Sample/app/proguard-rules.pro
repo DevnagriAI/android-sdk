@@ -16,6 +16,14 @@
 # debugging stack traces.
 #-keepattributes SourceFile,LineNumberTable
 
+-keep class com.devnagritranslationsdk.** { *; }
+# ---------- AndroidX / Kotlin basics ----------
+-keep class kotlin.Metadata { *; }
+-keep class kotlinx.coroutines.** { *; }
+-keep class androidx.** { *; }
+
+
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+
