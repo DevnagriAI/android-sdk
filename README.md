@@ -24,7 +24,7 @@ Add the below dependency in your app build.gradle file:
 
         ...
 
-        implementation ('com.github.DevnagriAI:android-sdk:2.0.3@aar') { transitive(true) }
+        implementation ('com.github.DevnagriAI:android-sdk:2.0.4@aar') { transitive(true) }
 
     }
 
@@ -34,7 +34,7 @@ Use Kotlin version 1.8.0 or later and Gradle JDK version 18. This SDK supports o
 
 # Configuration
 
-If your app is proguard enabled. Please add following lines in your proguard rule file (i.e. proguard-rules.pro)
+If your app is proguard enabled. Please add following lines in your proguard rule file (i.e. proguard-rules.pro) to see if this is working. If this does not work then you will have to use the manual methods mentioned below (i.e. getTranslationOfString)
 
         -keep class com.devnagritranslationsdk.** { *; }
 

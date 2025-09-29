@@ -26,8 +26,8 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
         debug {
-            minifyEnabled false
-            shrinkResources false    // 🔹 removes unused resources
+            minifyEnabled true
+            shrinkResources true    // 🔹 removes unused resources
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'        }
 
     }
@@ -51,7 +51,7 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.2.1'
     implementation 'androidx.navigation:navigation-fragment-ktx:2.9.5'
     implementation 'androidx.navigation:navigation-ui-ktx:2.9.5'
-    implementation('com.github.DevnagriAI:android-sdk:2.0.3@aar') {
+    implementation('com.github.DevnagriAI:android-sdk:2.0.4@aar') {
         transitive(true)
     }
 

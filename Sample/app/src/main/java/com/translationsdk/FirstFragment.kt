@@ -35,6 +35,8 @@ class FirstFragment : Fragment() {
     ): View {
 
         _binding = FragmentFirstBinding.inflate(inflater, container, false)
+
+        binding.buttonFirst.text = getString(R.string.change)
         return binding.root
 
     }

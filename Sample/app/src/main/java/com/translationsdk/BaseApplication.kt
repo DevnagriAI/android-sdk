@@ -29,7 +29,7 @@ class BaseApplication : Application() {
             }
         }
 
-        val API_KEY = "Input your api key here"
+        val API_KEY = "Enter your API key here"
         Log.d("devNagriTranslationTAG", "SDK initialising")
         DevnagriTranslationSDK.init(
             applicationContext,
