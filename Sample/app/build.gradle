@@ -54,7 +54,7 @@ dependencies {
     implementation 'androidx.navigation:navigation-fragment-ktx:2.9.5'
     implementation 'androidx.navigation:navigation-ui-ktx:2.9.5'
     //Add DevnagriAI Dependency
-    implementation('com.github.DevnagriAI:android-sdk:2.0.5@aar') {
+    implementation('com.github.DevnagriAI:android-sdk:3.0.0@aar') {
         transitive(true)
     }
 }
