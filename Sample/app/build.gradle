@@ -26,8 +26,8 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
         debug {
-            minifyEnabled true
-            shrinkResources true    // 🔹 removes unused resources
+            minifyEnabled false
+            shrinkResources false    // 🔹 removes unused resources
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'        }
 
     }
