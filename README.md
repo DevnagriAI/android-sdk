@@ -24,19 +24,15 @@ Add the below dependency in your app build.gradle file:
 
         ...
 
-        implementation ('com.github.DevnagriAI:android-sdk:2.0.4@aar') { transitive(true) }
+        implementation ('com.github.DevnagriAI:android-sdk:2.0.5@aar') { transitive(true) }
 
     }
 
 # Compatibility
 
-Use Kotlin version 1.8.0 or later and Gradle JDK version 18. This SDK supports only Kotlin. The target/compile SDK version should be 36, and the SDK is compatible with Android 10 and above.
+It supports Kotlin 2.2.20, JVM 1.8, and modern AndroidX libraries like Room, Lifecycle, and Navigation. Built with Gradle 8.14.3 and AGP 8.13 This SDK supports only Kotlin. The target/compile SDK version should be 36, and the SDK is compatible with Android 10 to Android 16.
 
 # Configuration
-
-If your app is proguard enabled. Please add following lines in your proguard rule file (i.e. proguard-rules.pro) to see if this is working. If this does not work then you will have to use the manual methods mentioned below (i.e. getTranslationOfString)
-
-        -keep class com.devnagritranslationsdk.** { *; }
 
 Initialise the SDK in your application class and add the API_KEY from Devnagri.
 

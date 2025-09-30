@@ -1,3 +1,5 @@
+import org.jetbrains.kotlin.gradle.dsl.JvmTarget
+
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
@@ -6,17 +8,15 @@ plugins {
 }
 
 android {
-    compileSdk 36
+    compileSdkVersion 36
 
 
     defaultConfig {
-
         applicationId "com.lacalization.sample"
         minSdk 23
         targetSdk 36
         versionCode 1
-        versionName "9.0"
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        versionName "1.0"
     }
 
     buildTypes {
@@ -26,8 +26,8 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
         debug {
-            minifyEnabled false
-            shrinkResources false    // 🔹 removes unused resources
+            minifyEnabled true
+            shrinkResources true    // 🔹 removes unused resources
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'        }
 
     }
@@ -35,8 +35,10 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
-    kotlinOptions {
-        jvmTarget = '1.8'
+    kotlin {
+        compilerOptions {
+            jvmTarget.set(JvmTarget.JVM_1_8)
+        }
     }
     buildFeatures {
         viewBinding true
@@ -51,8 +53,8 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.2.1'
     implementation 'androidx.navigation:navigation-fragment-ktx:2.9.5'
     implementation 'androidx.navigation:navigation-ui-ktx:2.9.5'
-    implementation('com.github.DevnagriAI:android-sdk:2.0.4@aar') {
+    //Add DevnagriAI Dependency
+    implementation('com.github.DevnagriAI:android-sdk:2.0.5@aar') {
         transitive(true)
     }
-
 }

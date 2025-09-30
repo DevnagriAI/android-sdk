@@ -1,0 +1,243 @@
+{
+	"orders": [{
+			"order_info": {
+				"customer": {
+					"customer_id": "customer_reena",
+					"customer_name": "GUEST-3",
+					"customer_type": "Android Developer"
+				},
+				"ipad_order_id": "pro",
+				"order_closed_by": "623d6abacb6c0f2dab19d3b2",
+				"order_created_date": "2022-10-28 07:54:25",
+				"order_discount": {
+					"amount": "0.0",
+					"type": "N-typo"
+				},
+				"order_extra_charge_info": "Not providing any info",
+				"order_is_discount_applied": 0,
+				"order_opened_by": "IOS Developer",
+				"order_price": {
+					"amount": "Two Rupees",
+					"authorized_amount": "Five Rupees",
+					"comp_amount": "Ten",
+					"discount_amount": "Zero",
+					"extra_charge_amount": "Thousand",
+					"gratuity_amount": "Hundred",
+					"gross_amount": "Nine",
+					"net_amount": "Null",
+					"tax_amount": "one Lake",
+					"tip_amount": "Ten Crore"
+				},
+				"order_status": "PAID",
+				"payment_mode": "CASH",
+				"payment_type": "NORMAL"
+			},
+			"order_item_info": "yes i will mail your order details.",
+			"payment_info": [{
+				"card_id": "Bharat",
+				"payment_at": "2022-10-28 07:54:31",
+				"payment_mode": "CASH",
+				"payment_token": "raj soni",
+				"split_payment_info": {
+					"additional_tip_amount": "ten",
+					"amount": "six",
+					"authorized_amount": "zero",
+					"gross_amount": "six decimal zero",
+					"net_amount": "six decimal eight"
+				}
+			}]
+		},
+		{
+			"order_info": {
+				"customer": {
+					"customer_id": "",
+					"customer_name": "GUEST-11",
+					"customer_type": "GUEST"
+				},
+				"ipad_order_id": "ipad_order_id",
+				"order_closed_by": "order_closed_by",
+				"order_created_date": "2022-10-28 10:39:47",
+				"order_discount": {
+					"amount": "0.0",
+					"type": "N"
+				},
+				"order_extra_charge_info": "order_extra_charge_info",
+				"order_is_discount_applied": "0",
+				"order_opened_by": "623d6abacb6c0f2dab19d3b",
+				"order_price": {
+					"amount": "40.83",
+					"authorized_amount": "0.00",
+					"comp_amount": "0.00",
+					"discount_amount": "0.0",
+					"extra_charge_amount": "0.00",
+					"gratuity_amount": "0.00",
+					"gross_amount": "40.83",
+					"net_amount": "45.60",
+					"tax_amount": "4.77",
+					"tip_amount": "0.00"
+				},
+				"order_status": "PAID",
+				"payment_mode": "CASH",
+				"payment_type": "SPLIT"
+			},
+			"order_item_info": [{
+					"category_id": "623d6abbcb6c0f2dab19d3bc",
+					"order_product_details": {
+						"category_name": "Beverage",
+						"modifiers": "modifiers",
+						"name": "Iced Caramel Macchiato",
+						"short_desc": "The Iced Caramel Macchiato is made with our rich, dark-roasted roasted McCafe espresso and is served with whole milk, mixed with sweet caramel syrup.",
+						"tax_details": {
+							"tax_id": "623d6abbcb6c0f2dab19d3b8",
+							"tax_name": "Vat - 10",
+							"tax_percentage": "10.00"
+						},
+						"tax_inclusive": "true",
+						"variant": {
+							"variant_amount": "7.8",
+							"variant_id": "623dc362807e91445eb354ab",
+							"variant_name": "Large"
+						}
+					},
+					"order_product_discount": {
+						"amount": "0.0",
+						"type": "N"
+					},
+					"order_product_is_discount_applied": 0,
+					"order_product_notes": "diffs",
+					"order_product_price": {
+						"amount": "28.36",
+						"discount_amount": "dfg",
+						"gratuity_amount": "trotter",
+						"gross_amount": "tort",
+						"net_amount": "ere",
+						"original_amount": "cubic",
+						"tax_amount": "adzes"
+					},
+					"order_product_reason": "prem ratan dhan payo",
+					"order_product_status": "3 idiots",
+					"order_product_type": "REGULAR",
+					"order_served_by": "dogged",
+					"product_id": "dragster",
+					"product_variant_id": "Xcode",
+					"quantity": "4"
+				},
+				{
+					"category_id": "slippers",
+					"order_product_details": {
+						"category_name": "Beverage",
+						"modifiers": "defog",
+						"name": "Sprite",
+						"short_desc": "Cold Drink",
+						"tax_details": {
+							"tax_id": "623d6abbcb6c0f2dab19d3b9",
+							"tax_name": "Vat - 18",
+							"tax_percentage": "18.00"
+						},
+						"tax_inclusive": "true",
+						"variant": {
+							"variant_amount": "10.0",
+							"variant_id": "sing a song",
+							"variant_name": "Sprite"
+						}
+
+					},
+					"order_product_discount": {
+						"amount": "0.0",
+						"type": "defending"
+					},
+					"order_product_is_discount_applied": "n na re n na re n naa re, naa naa re",
+					"order_product_notes": "",
+					"order_product_price": {
+						"amount": "8.47",
+						"discount_amount": "0.0",
+						"gratuity_amount": "0.0",
+						"gross_amount": "8.47",
+						"net_amount": "8.47",
+						"original_amount": "10.0",
+						"tax_amount": "1.53"
+					},
+					"order_product_reason": "",
+					"order_product_status": "NONE",
+					"order_product_type": "REGULAR",
+					"order_served_by": "'adsorbed,sold",
+					"product_id": "a, disk,ask",
+					"product_variant_id": "ashlars",
+					"Quantity": "why we define it"
+				},
+				{
+					"category_id": "4 kadam",
+					"order_product_details": {
+						"category_name": "Beverage",
+						"modifiers": "No modifiers",
+						"name": "Coca-Cola",
+						"short_desc": "Soft Drink",
+						"tax_details": {
+							"tax_id": "Salary",
+							"tax_name": "ask klass h",
+							"tax_percentage": "asl dulled"
+						},
+						"tax_inclusive": "true",
+						"variant": {
+							"variant_amount": "jihads",
+							"variant_id": ",asked ,last,lk ",
+							"variant_name": "c,masonic,manned,m"
+						}
+
+					},
+					"order_product_discount": {
+						"amount": "0.0",
+						"type": "lash kaddishes asked tasks Vodkas Adj haskdjhaskjdhkashjd"
+					},
+					"order_product_is_discount_applied": "Naa Naa re",
+					"order_product_notes": "Kesriya tera Ishq hai Piya",
+					"order_product_price": {
+						"amount": "4.0",
+						"discount_amount": "jihad's",
+						"gratuity_amount": "lased, ska,dlk",
+						"gross_amount": "deals Flasks delays Jolla's JPL ask jails aliases dips",
+						"net_amount": "test",
+						"original_amount": "Wasd lambdas asked lasted laskjdlkjasdlaskjd asked",
+						"tax_amount": ",jas debased lakes lasted last lasted lads ladles do"
+					},
+					"order_product_reason": "",
+					"order_product_status": "NONE",
+					"order_product_type": "REGULAR",
+					"order_served_by": "landless",
+					"product_id": "kaddishes",
+					"product_variant_id": "test roma shira",
+					"quantity": 1
+				}
+			],
+			"payment_info": [{
+					"card_id": "",
+					"payment_at": "2022-10-28 10:40:38",
+					"payment_mode": "CASH",
+					"payment_token": "test cv resume",
+					"split_payment_info": {
+						"additional_tip_amount": "test forty five",
+						"amount": "pastry",
+						"authorized_amount": "cake",
+						"gross_amount": "0.00",
+						"net_amount": "cocoa"
+					},
+					"split_payment_ipad_id": "62ZG00157-0"
+				},
+				{
+					"card_id": "square bits private ltd",
+					"payment_at": "2022-10-28 10:41:18",
+					"payment_mode": "CASH",
+					"payment_token": "token successfully applied",
+					"split_payment_info": {
+						"additional_tip_amount": "Amount price",
+						"amount": "parse",
+						"authorized_amount": "india",
+						"gross_amount": "france",
+						"net_amount": "romaine"
+					},
+					"split_payment_ipad_id": "pushpendra singh"
+				}
+			]
+		}
+	]
+}

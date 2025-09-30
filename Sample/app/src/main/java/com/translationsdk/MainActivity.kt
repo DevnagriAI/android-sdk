@@ -2,6 +2,7 @@ package com.translationsdk
 
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.navigation.findNavController
@@ -31,7 +32,7 @@ class MainActivity : AppCompatActivity() {
 
         val navController = findNavController(R.id.nav_host_fragment_content_main)
         appBarConfiguration = AppBarConfiguration(navController.graph)
-
+        binding.fab.visibility = View.VISIBLE
         binding.fab.setOnClickListener { view ->
 
             DevnagriTranslationSDK.apply {
