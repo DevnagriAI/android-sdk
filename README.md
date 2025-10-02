@@ -30,7 +30,7 @@ Add the below dependency in your app build.gradle file:
 
 # Compatibility
 
-It supports Kotlin 2.2.20, JVM 11, and modern AndroidX libraries like Room, Lifecycle, and Navigation. Built with Gradle 8.14.3 and AGP 8.13 This SDK supports only Kotlin language. The target/compile SDK version should be 36, and the SDK is compatible with Android 10 to Android 16.
+It supports Kotlin 2.2.20, JVM 21, and modern AndroidX libraries like Room, Lifecycle, and Navigation. Built with Gradle 8.14.3 and AGP 8.13 This SDK supports only Kotlin language. The target/compile SDK version should be 36, and the SDK is compatible with Android 10 to Android 16.
 
 # Configuration
 
