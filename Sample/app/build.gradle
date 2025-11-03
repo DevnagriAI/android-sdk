@@ -1,5 +1,3 @@
-import org.jetbrains.kotlin.gradle.dsl.JvmTarget
-
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
@@ -8,53 +6,64 @@ plugins {
 }
 
 android {
-    compileSdkVersion 36
-
-
+    compileSdk 34
     defaultConfig {
         applicationId "com.lacalization.sample"
-        minSdk 23
+        minSdk 26
         targetSdk 36
         versionCode 1
-        versionName "1.0"
+        versionName "10.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
-
     buildTypes {
         release {
             minifyEnabled true
-            shrinkResources true    // 🔹 removes unused resources
+            shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
         debug {
-            minifyEnabled false
-            shrinkResources false    // 🔹 removes unused resources
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'        }
-
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
     }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_11
         targetCompatibility JavaVersion.VERSION_11
     }
-    kotlin {
-        compilerOptions {
-            jvmTarget.set(JvmTarget.JVM_11)
-        }
+    kotlinOptions {
+        jvmTarget = '11'
     }
     buildFeatures {
         viewBinding true
     }
     namespace 'com.translationsdk'
 }
+configurations.configureEach {
+    resolutionStrategy {
+        force "org.jetbrains.kotlin:kotlin-stdlib:1.7.10"
+        force "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.7.10"
+        force "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.7.10"
+        force "org.jetbrains.kotlin:kotlin-reflect:1.7.10"
+    }
+}
 
 dependencies {
 
-    implementation 'androidx.appcompat:appcompat:1.7.1'
-    implementation 'com.google.android.material:material:1.13.0'
-    implementation 'androidx.constraintlayout:constraintlayout:2.2.1'
-    implementation 'androidx.navigation:navigation-fragment-ktx:2.9.5'
-    implementation 'androidx.navigation:navigation-ui-ktx:2.9.5'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.12.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.8.4'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.3.2'
+
+
+    //Add DevnagriAI Module Directly
+//    implementation project(':DevNagriTranslationSDK')
+
     //Add DevnagriAI Dependency
-    implementation('com.github.DevnagriAI:android-sdk:2.0.5@aar') {
-        transitive(true)
-    }
+//     implementation ('com.github.DevnagriAI:android-sdk:2.0.4@aar') {
+//        transitive(true)
+//     }
+
+    implementation ('com.github.DevnagriAI:android-sdk:sbi-mf-1.0.0@aar') { transitive(true) }
 }

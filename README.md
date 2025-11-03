@@ -1,3 +1,5 @@
+# This is a customised SDK for SBI MF customer only. This is not for the other companies.
+
 # SDK Integration Steps:
 
 # Introduction
@@ -24,13 +26,13 @@ Add the below dependency in your app build.gradle file:
 
         ...
 
-        implementation ('com.github.DevnagriAI:android-sdk:2.0.5@aar') { transitive(true) }
+        implementation ('com.github.DevnagriAI:android-sdk:sbi-mf-1.0.0@aar') { transitive(true) }
 
     }
 
 # Compatibility
 
-It supports Kotlin 2.2.20, JVM 11, and modern AndroidX libraries like Room, Lifecycle, and Navigation. Built with Gradle 8.14.3 and AGP 8.13 This SDK supports only Kotlin language. The target/compile SDK version should be 36, and the SDK is compatible with Android 10 to Android 16.
+It supports Kotlin 1.7.10, JVM 11, and modern AndroidX libraries like Room, Lifecycle, and Navigation. Built with Gradle 7.4.2 and AGP 7.5 This SDK supports only Kotlin language. The target/compile SDK version should be 34, and the SDK is compatible with Android 10 to Android 14.
 
 # Configuration
 
