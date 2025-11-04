@@ -29,7 +29,7 @@ class BaseApplication : Application() {
             }
         }
 
-        val API_KEY = "devnagri_test_943a8a4e7f4b11f0ba2c42010aa00fc7"
+        val API_KEY = ""
         Log.d("devNagriTranslationTAG", "SDK initialising")
         DevnagriTranslationSDK.init(
             applicationContext,
