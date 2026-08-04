@@ -24,13 +24,13 @@ Add the below dependency in your app build.gradle file:
 
         ...
 
-        implementation ('com.github.DevnagriAI:android-sdk:3.0.4@aar') { transitive(true) }
+        implementation ('com.github.DevnagriAI:android-sdk:3.0.5@aar') { transitive(true) }
 
     }
 
 # Compatibility
 
-It supports Kotlin 2.2.20, JVM 21, and modern AndroidX libraries like Room, Lifecycle, and Navigation. Built with Gradle 8.14.3 and AGP 8.13 This SDK supports only Kotlin language. The target/compile SDK version should be 36, and the SDK is compatible with Android 10 to Android 16.
+It supports Kotlin 2.2.20, JVM 21, and modern AndroidX libraries like Room, Lifecycle, and Navigation. Built with Gradle 9.5.0 and AGP 9.3.1 This SDK supports only Kotlin language. The target/compile SDK version should be 37, and the SDK is compatible with Android 10 to Android 17.
 
 # Configuration
 
@@ -70,8 +70,7 @@ The SDK override the functionality of @string and getString by default.
 
 # Change Language
 
-In case you don't want to use the system language, you can set a different language in the updateAppLocale method. The language code (locale) needs to be present in a release from Devnagri.
-updateAppLocale function may take some time (for example: 3-4 seconds), we suggest you to add a loader before calling updateAppLocale and stop in callback.
+In case you don't want to use the system language, you can set a different language in the updateAppLocale method. The language code (locale) needs to be present in a release from Devnagri. updateAppLocale function may take some time (for example: 3-4 seconds), we suggest you to add a loader before calling updateAppLocale and stop in callback.
 
     //Start loader here
     val locale = Locale("hi");
@@ -83,8 +82,7 @@ Please note that you will get the english text back if your device language is e
 
 # Get Supported Languages
 
-You can get supported languages for the SDK using this method.
-This will return hashmap of language name and language code
+You can get supported languages for the SDK using this method. This will return hashmap of language name and language code
 
     val supportedLangauges =  DevnagriTranslationSDK.getAllSupportableLanguages()
 
@@ -116,8 +114,7 @@ You can use these methods anywhere in your project and these will provide transl
 
 # Get Translations Of JSON Object
 
-// This method is used to convert the entire JSON object to requested language
-// ignoreKeys -> Send a list of strings that you want to ignore during the conversion process
+// This method is used to convert the entire JSON object to requested language // ignoreKeys -> Send a list of strings that you want to ignore during the conversion process
 
     val jsonObject = JSONObject()
     jsonObject.put("sample_key", "Sample Text")
@@ -134,12 +131,9 @@ You can use these methods anywhere in your project and these will provide transl
 # For Modular Approach
 
 - Please add DevnagriSDK dependency in each module level gradle file.
-- If you have multiple modules in your application,
-  then in each module's base activity override the below method.
+- If you have multiple modules in your application, then in each module's base activity override the below method.
 
-  override fun getDelegate(): AppCompatDelegate {
-  return DevnagriTranslationSDK.fetchAppDelegate(this, super.getDelegate())
-  }
+  override fun getDelegate(): AppCompatDelegate { return DevnagriTranslationSDK.fetchAppDelegate(this, super.getDelegate()) }
 
 # Usage
 
