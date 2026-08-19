@@ -8,13 +8,13 @@ plugins {
 }
 
 android {
-    compileSdkVersion 36
+    compileSdkVersion 37
 
 
     defaultConfig {
-        applicationId "com.lacalization.sample"
+        applicationId "com.translationsdk"
         minSdk 23
-        targetSdk 36
+        targetSdk 37
         versionCode 1
         versionName "1.0"
     }
@@ -54,7 +54,7 @@ dependencies {
     implementation 'androidx.navigation:navigation-fragment-ktx:2.9.5'
     implementation 'androidx.navigation:navigation-ui-ktx:2.9.5'
     //Add DevnagriAI Dependency
-    implementation('com.github.DevnagriAI:android-sdk:3.0.4@aar') {
+    implementation('com.github.DevnagriAI:android-sdk:3.0.5@aar') {
         transitive(true)
     }
 }

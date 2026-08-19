@@ -24,13 +24,13 @@ Add the below dependency in your app build.gradle file:
 
         ...
 
-        implementation ('com.github.DevnagriAI:android-sdk:3.0.6@aar') { transitive(true) }
+        implementation ('com.github.DevnagriAI:android-sdk:3.0.7@aar') { transitive(true) }
 
     }
 
 # Compatibility
 
-It supports Kotlin 2.2.20, JVM 21, and modern AndroidX libraries like Room, Lifecycle, and Navigation. Built with Gradle 9.5.0 and AGP 9.3.1 This SDK supports only Kotlin language. The target/compile SDK version should be 37, and the SDK is compatible with Android 10 to Android 17.
+It supports Kotlin 2.2.20, JVM 21, and modern AndroidX libraries like Room, Lifecycle, and Navigation. Built with Gradle 9.5.0 and AGP 9.3.1 This SDK supports only Kotlin language. The target/compile SDK version should be 36, and the SDK is compatible with Android 10 to Android 17.
 
 # Configuration
 

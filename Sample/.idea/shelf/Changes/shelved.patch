@@ -1,0 +1,19 @@
+Index: ../pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project xmlns=\"http://maven.apache.org/POM/4.0.0\" xsi:schemaLocation=\"http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n  <!-- This module was also published with a richer model, Gradle metadata,  -->\n  <!-- which should be used instead. Do not delete the following line which  -->\n  <!-- is to indicate to Gradle or any Gradle module metadata file consumer  -->\n  <!-- that they should prefer consuming it instead. -->\n  <!-- do_not_remove: published-with-gradle-metadata -->\n  <modelVersion>4.0.0</modelVersion>\n  <groupId>com.github.DevnagriAI</groupId>\n  <artifactId>android-sdk</artifactId>\n  <version>3.0.5</version>\n <!-- <packaging>aar</packaging>-->\n  <dependencies>\n     <dependency>\n      <groupId>com.google.android.material</groupId>\n      <artifactId>material</artifactId>\n      <version>1.13.0</version>\n      <scope>runtime</scope>\n    </dependency>\n    <dependency>\n      <groupId>com.google.code.gson</groupId>\n      <artifactId>gson</artifactId>\n      <version>2.13.2</version>\n      <scope>runtime</scope>\n    </dependency>\n    <dependency>\n      <groupId>androidx.room</groupId>\n      <artifactId>room-runtime</artifactId>\n      <version>2.8.1</version>\n      <scope>runtime</scope>\n    </dependency>\n    <dependency>\n      <groupId>androidx.room</groupId>\n      <artifactId>room-ktx</artifactId>\n      <version>2.8.1</version>\n      <scope>runtime</scope>\n    </dependency>\n    <dependency>\n      <groupId>org.jetbrains.kotlinx</groupId>\n      <artifactId>kotlinx-coroutines-android</artifactId>\n\t  <version>1.10.2</version>\n      <scope>runtime</scope>\n    </dependency>\n    <dependency>\n      <groupId>androidx.lifecycle</groupId>\n      <artifactId>lifecycle-process</artifactId>\n      <version>2.9.4</version>\n      <scope>runtime</scope>\n    </dependency>\n    <dependency>\n      <groupId>androidx.lifecycle</groupId>\n      <artifactId>lifecycle-runtime-ktx</artifactId>\n      <version>2.9.4</version>\n      <scope>runtime</scope>\n    </dependency>\n  </dependencies>\n</project>\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../pom.xml b/../pom.xml
+--- a/../pom.xml	(revision 63efa2b818272a058adbb346bc1a1ec209b9a5db)
++++ b/../pom.xml	(date 1786623607971)
+@@ -8,7 +8,7 @@
+   <modelVersion>4.0.0</modelVersion>
+   <groupId>com.github.DevnagriAI</groupId>
+   <artifactId>android-sdk</artifactId>
+-  <version>3.0.5</version>
++  <version>3.0.6</version>
+  <!-- <packaging>aar</packaging>-->
+   <dependencies>
+      <dependency>
